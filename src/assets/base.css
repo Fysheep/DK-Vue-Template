@@ -1,0 +1,50 @@
+body {
+  --nav-height: 2rem;
+  --nav-height-outer: calc(var(--nav-height) + 36.8px);
+
+  --nav-radius: 0.5rem;
+
+  --button-radius: 1rem;
+
+  &.light {
+    --body-bg: whitesmoke;
+    --nav-bg: whitesmoke;
+    --button-bg: rgb(173, 255, 47);
+
+    --nav-border: linear-gradient(75deg, red, rgb(2, 105, 146));
+
+    --body-text-color: black;
+    --button-text-color: black;
+
+    --shadow-color: black;
+    --nav-text-shadows: none;
+  }
+
+  &.dark {
+    --body-bg: #222;
+    --nav-bg: linear-gradient(79deg, rgb(2, 105, 146), rgb(120, 217, 255));
+    --button-bg: whitesmoke;
+
+    --nav-border: linear-gradient(0deg, white, white);
+
+    --body-text-color: white;
+    --button-text-color: black;
+
+    --shadow-color: whitesmoke;
+    --nav-text-shadows: drop-shadow(0 0 5px black);
+  }
+
+  &.blue {
+    --body-bg: linear-gradient(27deg, rgb(2, 105, 146), rgb(120, 217, 255));
+    --nav-bg: #282828;
+    --button-bg: linear-gradient(34deg, red, rgb(255, 0, 98));
+
+    --nav-border: linear-gradient(0deg, white, white);
+
+    --body-text-color: white;
+    --button-text-color: white;
+
+    --shadow-color: whitesmoke;
+    --nav-text-shadows: drop-shadow(0 0 10px whitesmoke);
+  }
+}
