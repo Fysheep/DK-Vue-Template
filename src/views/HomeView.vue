@@ -1,14 +1,11 @@
 <script lang="ts">
-import AppButton from '@/components/AppButton.vue';
-import { ThemeStore } from '@/stores/theme';
 
 export default {
   components: {
-    AppButton,
   },
   data() {
     return {
-      themes: ThemeStore()
+
     }
   },
 }
@@ -16,8 +13,6 @@ export default {
 
 <template>
   <main class="dp-flex fd-c gap-3">
-    <div>
-      <AppButton @click="themes.cycle()">Change Theme</AppButton>
-    </div>
+    <h1 consoleheadline class="ta-center"> Test Header</h1>
   </main>
 </template>

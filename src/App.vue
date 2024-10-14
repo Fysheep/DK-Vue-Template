@@ -19,13 +19,10 @@ export default {
 
 <template>
   <AppNavbar class="jc-sb">
-    <span @click="go('/')" clickable shadow>Fyshi's Web-Projects</span>
+    <span @click="go('/')" clickable shadow>Sample Project</span>
     <div class="dp-flex gap-3">
       <span @click="go_outwards('https://github.com/Fysheep')" clickable underlined shadow> GitHub </span>
-      <span @click="go('/Fyshi')" clickable underlined shadow> About Me </span>
     </div>
   </AppNavbar>
   <RouterView />
 </template>
-
-<style scoped></style>
