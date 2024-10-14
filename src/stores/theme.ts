@@ -13,8 +13,8 @@ export const ThemeStore = defineStore('theme', () => {
   function set(value: ThemeType) {
     data.value = value
 
-    document.body.classList.add(value)
     document.body.classList.remove(localStorage.theme)
+    document.body.classList.add(value)
 
     localStorage.theme = value
   }

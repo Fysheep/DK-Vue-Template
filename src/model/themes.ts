@@ -1,4 +1,4 @@
-const _themeArrayConst = ['dark', 'light', 'blue'] as const
+const _themeArrayConst = ['dark'] as const
 const theme_array = [..._themeArrayConst]
 type ThemeType = (typeof _themeArrayConst)[number]
 
