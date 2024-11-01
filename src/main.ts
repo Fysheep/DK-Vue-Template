@@ -11,8 +11,8 @@ const app = createApp(App)
 
 {
   /* PINIA */
-  app.use(createPinia())
-  ThemeStore()
+  app.use(createPinia()) // initialize Pinia
+  ThemeStore() // initialize themes
 }
 
 app.use(router)
