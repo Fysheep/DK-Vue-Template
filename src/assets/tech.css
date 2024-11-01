@@ -140,16 +140,6 @@
   text-decoration: underline;
 }
 
-*[shadow] {
-  filter: var(--nav-text-shadows);
-}
-
-*[consoleheadline] {
-  font-family: ui-monospace, 'Cascadia Mono', 'Segoe UI Mono', Menlo, Monaco, Consolas, monospace;
-
-  letter-spacing: 1rem;
-}
-
 .p-1 {
   padding: 2px;
 }
