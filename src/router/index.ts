@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory, type RouteLocationNormalized } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 
 const routes = [
   {
@@ -11,13 +11,6 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: routes
-})
-
-router.beforeEach((newRoute: RouteLocationNormalized, oldRoute: RouteLocationNormalized) => {
-  /* return {name: _ROUTENAME_} // route to _ROUTENAME_ */
-  /* return {path: _PATHNAME_} //route to _PATHNAME_ */
-  /* return true // confirm routing */
-  /* return false // disallow routing */
 })
 
 // Generate Types for Route-names and Route-paths
